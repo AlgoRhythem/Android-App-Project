@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7EB"
+    tools:context=".GameDisplay">
+
+    <VideoView
+        android:id="@+id/gameVid"
+        android:layout_width="670dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/mouse_memoirs"
+        android:text="This is where the question will be displayed"
+        android:textColor="#FF9800"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gameVid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/a"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#9C27B0"
+        android:text="A"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gameVid"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion" />
+
+    <Button
+        android:id="@+id/b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#9C27B0"
+        android:text="B"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/a"
+        app:layout_constraintStart_toStartOf="@+id/a"
+        app:layout_constraintTop_toBottomOf="@+id/a" />
+
+    <Button
+        android:id="@+id/c"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#9C27B0"
+        android:text="C"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/b"
+        app:layout_constraintStart_toStartOf="@+id/b"
+        app:layout_constraintTop_toBottomOf="@+id/b" />
+
+    <Button
+        android:id="@+id/d"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#9C27B0"
+        android:text="D"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/c"
+        app:layout_constraintStart_toStartOf="@+id/c"
+        app:layout_constraintTop_toBottomOf="@+id/c" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FF9800"
+        android:clickable="true"
+        android:onClick="next"
+        app:backgroundTint="#FF9800"
+        app:fabCustomSize="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="85sp"
+        app:srcCompat="@drawable/nexticon"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FF9800"
+        android:clickable="true"
+        android:onClick="back"
+        app:backgroundTint="#FF9800"
+        app:fabCustomSize="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gameVid"
+        app:maxImageSize="85sp"
+        app:srcCompat="@drawable/backicon"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

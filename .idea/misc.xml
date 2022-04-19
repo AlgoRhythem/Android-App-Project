@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/font/.xml" value="0.5953125" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/font/macondo.xml" value="0.5953125" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout-land/activity_game_dashboard.xml" value="0.5397727272727273" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout-land/activity_game_display.xml" value="0.67" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout-land/activity_landing_page.xml" value="0.67" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout-land/activity_results_page.xml" value="0.67" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout-land/activity_splash.xml" value="0.67" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout-land/fragment_first.xml" value="0.503125" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout/activity_game_dashboard.xml" value="0.5" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout/activity_game_display.xml" value="0.3825" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout/activity_landing.xml" value="0.5" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout/activity_landing_page.xml" value="0.67" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout/activity_results_page.xml" value="0.3825" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout/activity_splash.xml" value="0.3825" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout/fragment_first.xml" value="0.4159090909090909" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout/fragment_second.xml" value="0.55" />
+        <entry key="..\:/Users/renee/AndroidStudioProjects/FinalProjectApp/app/src/main/res/layout/fragment_third.xml" value="0.55" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

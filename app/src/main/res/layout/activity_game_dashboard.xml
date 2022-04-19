@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7EB"
+    tools:context=".GameDashboard">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="800dp"
+        android:layout_height="650dp"
+        android:background="#C57705"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="800dp"
+        android:layout_height="652dp"
+        android:alpha="0.8"
+        android:scaleType="centerCrop"
+        android:src="@drawable/disneygif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mouse_memoirs"
+        android:shadowColor="#6A5535"
+        android:shadowDx="0"
+        android:shadowDy="10"
+        android:shadowRadius="12"
+        android:text="Remember When?"
+        android:textColor="#FF9800"
+        android:textSize="140sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#00958D8D"
+        android:fontFamily="@font/mouse_memoirs"
+        android:onClick="start"
+        android:text="START"
+        android:textColor="#FF9800"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/mouse_memoirs"
+        android:onClick="quit"
+        android:text="QUIT"
+        android:textColor="#432903"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <EditText
+        android:id="@+id/inputOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.7"
+        android:background="#ffffff"
+        android:ems="10"
+        android:fontFamily="@font/mouse_memoirs"
+        android:hint="Enter player name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#432903"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/inputTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/inputTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"
+        android:background="#ffffff"
+        android:ems="10"
+        android:fontFamily="@font/mouse_memoirs"
+        android:hint="Enter player name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#432903"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/inputOne"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputOne"
+        app:layout_constraintTop_toBottomOf="@+id/inputOne" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:onClick="single"
+            android:shadowColor="#555252"
+            android:shadowDx="0"
+            android:shadowDy="10"
+            android:shadowRadius="5"
+            android:text="SINGLE PLAYER"
+            android:textColor="#FFFFFF"
+            android:textSize="75sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:onClick="multi"
+            android:shadowColor="#555252"
+            android:shadowDx="0"
+            android:shadowDy="10"
+            android:shadowRadius="5"
+            android:text="MULTI PLAYER"
+            android:textColor="#FFFFFF"
+            android:textSize="75sp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
